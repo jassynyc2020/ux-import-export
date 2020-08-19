@@ -1,11 +1,14 @@
-class Person {
+export { Person, render };
+
+export class Person {
   constructor(name, imageUrl) {
     this.name = name;
     this.imageUrl = imageUrl;
   }
 }
 
-function render(person) {
+
+export function render(person) {
   return `
         <div class="profile shadow">
             <img src="${person.imageUrl}"/>
@@ -13,5 +16,4 @@ function render(person) {
         </div>
     `;
 }
-
- 
+export { render };

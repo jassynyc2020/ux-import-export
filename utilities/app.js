@@ -1,4 +1,9 @@
-import { Person, render } from "../components/personalProfile";
+import { Person, render } from "./personalProfile.js";
+Person();
+render();
+
+import { render } from "./personalProfile.js";
+render();
 
 let people = [
   new Person("Bob", "bob-ross.jpg"),
@@ -10,6 +15,9 @@ window.onload = () => {
   renderList(people);
 };
 
+
+let result = render(person);
+console.log(result);
 function renderList(people) {
   let html = "";
   html += `<ul>`;
