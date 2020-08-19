@@ -1,20 +1,14 @@
-import { Person, render } from "./personalProfile.js";
-Person();
-render();
-
-import { render } from "./personalProfile.js";
-render();
+import { Person, render } from "../utilities/personalProfile.js";
 
 let people = [
-  new Person("Bob", "bob-ross.jpg"),
-  new Person("Frida", "frida-kahlo.jpg"),
-  new Person("Dali", "dali.jpg"),
+  new Person("Bob", "../images/bob-ross.jpg"),
+  new Person("Frida", "../images/frida-kahlo.jpg"),
+  new Person("Dali", "../images/dali.jpg"),
 ];
 
 window.onload = () => {
   renderList(people);
 };
-
 
 let result = render(person);
 console.log(result);
